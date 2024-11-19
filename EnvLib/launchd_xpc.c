@@ -41,8 +41,6 @@ extern struct _os_alloc_once_s _os_alloc_once_table[];
 
 extern int xpc_pipe_routine( xpc_object_t *pipe, xpc_object_t *request, xpc_object_t **response );
 
-extern int xpc_dictionary_set_mach_send( xpc_object_t xdict, const char *key, mach_port_t );
-
 extern char *xpc_strerror( int64_t );
 
 bool envlib_setenv_xpc( EnvEntry env[] )
